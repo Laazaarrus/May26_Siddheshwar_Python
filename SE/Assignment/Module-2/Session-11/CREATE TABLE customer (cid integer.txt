@@ -1,0 +1,41 @@
+CREATE TABLE customer (cid integer PRIMARY KEY AUTO_INTCREMENT,cname varchar (20),email text);
+
+CREATE TABLE product_master (pid integer PRIMARY KEY AUTO_INCREMENT,pname varchar (20),price interger,cid integer,FOREIGN KEY(cid)REFRENCES customer(cid));
+
+customer table:
+
+INSERT INTO customer(cname,email)VALUES
+('Suraj','surajalure@gmail.com'),
+('Yash','yash@gmail.com'),
+('Saurabh','saurabh@gmail.com'),
+('Ajay','ajayalure@gmail.com'),
+('Jack','jack@gmail.com');
+
+in same place paste:
+
+INSERT INTO product_master (pname,price,cid)VALUES
+('mouse',1999,1),
+('keyboard',900,1),
+('GPU',20000,2),
+('CPU',17000,3),
+('ssd',2000,3),
+('RAM',5999,4);
+
+
+SELECT customer.cname,customer.email,product_master .pname,product_master .price FROM customer LEFT JOIN product_master ON
+customer.cid=product_master.pid;
+
+SELECT c.cname,c.email,p.pname,p.price FROM customer as c JOIN product_master as p ON
+c.cid=p.pid;
+
+SELECT * FROM customer WHERE cname LIKE '%h';
+
+SELECT * FROM customer WHERE cid=5 AND cname='Jack';
+
+SELECT * FROM customer WHERE cid BETWEEN 1 AND 3;
+
+SELECT * FROM customer WHERE NOT cname='Yash';
+
+SELECT * FROM customer WHERE cname IN ('Suraj','Saurabh');
+
+

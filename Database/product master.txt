@@ -1,0 +1,27 @@
+create table product_master(pid INTEGER PRIMARY KEY AUTOINCREMENT, pname TEXT,price INTEGER, qty INTEGER);
+
+INSERT INTO product_master(pname,price,qty)VALUES
+("Apple Watch","10000","2"),
+("Routers","2400","30"),
+("Alexa","7000","12"),
+("House theaters","60000","5"),
+("Umbrella","200","100"),
+("Jacket","1000","40"),
+("Shirts","2999","40"),
+("Wristbands","100","100"),
+("Trousers","1000","30"),
+("Laptop","40000","10");
+
+SELECT * FROM product_master;
+
+SELECT * FROM product_master WHERE pid=1;
+
+SELECT pname,price FROM product_master WHERE pid=1;
+
+SELECT pname,price FROM product_master;
+
+SELECT min(price) FROM product_master;
+SELECT max(price) FROM product_master;
+SELECT avg(price) FROM product_master;
+SELECT sum(price) FROM product_master;
+SELECT count(*) FROM product_master;

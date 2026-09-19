@@ -1,0 +1,13 @@
+create table student(ID INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT,mobile INTEGER UNIQUE);
+
+INSERT INTO student(name,mobile)VALUES
+('Yashraj','0289939433829'),
+('Darshan','0286939400829'),
+('Kaustubh','028991955829'),
+('Saurabh','028922949929');
+
+UPDATE student SET mobile="2838819264"WHERE id=4;
+
+UPDATE student SET name="Jarus",mobile="8848848848"WHERE id=2;
+
+DELETE FROM student WHERE id=5;
