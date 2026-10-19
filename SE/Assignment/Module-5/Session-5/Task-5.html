@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BookMyShow Movie Page</title>
+
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+
+        body.dark-mode {
+            background-color: #222222;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>BookMyShow</h1>
+
+    <h2>Avengers: Doomsday</h2>
+
+    <p>Genre: Action / Science Fiction</p>
+    <p>Experience the epic superhero adventure!</p>
+
+    <button onclick="toggleMode()">Switch Theme</button>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+
+</body>
+</html>

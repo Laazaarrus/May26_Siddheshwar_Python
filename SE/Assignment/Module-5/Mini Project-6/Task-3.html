@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Link Inputs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        .social-input {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .social-input i {
+            position: absolute;
+            top: 10px;
+            left: 12px;
+            font-size: 20px;
+        }
+
+        .social-input input {
+            padding-left: 42px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Add Social Links</h2>
+
+        <div class="card p-4">
+
+            <div class="social-input">
+                <i class="bi bi-instagram"></i>
+                <input type="url" class="form-control"
+                       placeholder="Instagram URL">
+            </div>
+
+            <div class="social-input">
+                <i class="bi bi-linkedin"></i>
+                <input type="url" class="form-control"
+                       placeholder="LinkedIn URL">
+            </div>
+
+            <div class="social-input">
+                <i class="bi bi-spotify"></i>
+                <input type="url" class="form-control"
+                       placeholder="Spotify URL">
+            </div>
+
+            <div class="social-input">
+                <i class="bi bi-youtube"></i>
+                <input type="url" class="form-control"
+                       placeholder="YouTube Music URL">
+            </div>
+
+            <button class="btn btn-primary">Add Links</button>
+
+        </div>
+    </div>
+
+</body>
+</html>

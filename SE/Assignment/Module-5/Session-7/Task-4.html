@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        .product {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        .product h3 {
+            color: #333;
+        }
+
+        .product p {
+            color: #555;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* For tablets */
+        @media (max-width: 768px) {
+            .product-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* For mobile phones */
+        @media (max-width: 480px) {
+            .product-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Online Shopping Products</h1>
+
+    <div class="product-container">
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"
+                 alt="Smartphone">
+            <h3>Smartphone</h3>
+            <p>Latest smartphone with advanced features.</p>
+            <p class="price">₹15,999</p>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400"
+                 alt="Laptop">
+            <h3>Laptop</h3>
+            <p>Powerful laptop for work and study.</p>
+            <p class="price">₹45,999</p>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400"
+                 alt="Headphones">
+            <h3>Headphones</h3>
+            <p>Comfortable headphones with clear sound.</p>
+            <p class="price">₹1,999</p>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400"
+                 alt="Smart Watch">
+            <h3>Smart Watch</h3>
+            <p>Smart watch for fitness and daily use.</p>
+            <p class="price">₹2,499</p>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400"
+                 alt="Bluetooth Speaker">
+            <h3>Bluetooth Speaker</h3>
+            <p>Portable speaker with powerful sound.</p>
+            <p class="price">₹1,499</p>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400"
+                 alt="Digital Camera">
+            <h3>Digital Camera</h3>
+            <p>Capture photos with excellent detail.</p>
+            <p class="price">₹24,999</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

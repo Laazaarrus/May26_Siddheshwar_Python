@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Tile</title>
+
+    <style>
+        body {
+            background-color: #e6f2ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .product {
+            background-color: white;
+            width: 250px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+
+        img {
+            display: block;
+            width: 150px;
+            margin: 10px auto;
+        }
+
+        .product-name {
+            display: block;
+            font-size: 20px;
+        }
+
+        .price {
+            display: inline-block;
+            color: green;
+            font-weight: bold;
+        }
+
+        .hide-price .price {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flipkart Product</h1>
+
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2H5NGS5EB0DtzvPyUBQ3C1ZJSt-NYNwMCP9L5zs_rrw&s=10"
+             alt="Wireless headphones">
+
+        <span class="product-name">Wireless Headphones</span>
+
+        <p class="price">Price: ₹1,499</p>
+    </div>
+
+    <h2>Product with Hidden Price</h2>
+
+    <div class="product hide-price">
+        <img src="https://www.headphonezone.in/cdn/shop/files/Headphone-Zone-Kanto-Chalk-07.jpg?v=1764151865&width=500"
+             alt="Bluetooth speaker">
+
+        <span class="product-name">Bluetooth Speaker</span>
+
+        <p class="price">Price: ₹999</p>
+    </div>
+
+</body>
+</html>

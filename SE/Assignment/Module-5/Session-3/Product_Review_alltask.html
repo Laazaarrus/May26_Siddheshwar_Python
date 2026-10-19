@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review and Food Order Forms</title>
+
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        form {
+            background-color: white;
+            width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, select, textarea {
+            margin: 8px;
+            padding: 8px;
+            width: 80%;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Product Review Form</h1>
+
+    <!-- Task 1 and 2: Product review form with validation -->
+    <form action="" method="POST">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"
+               placeholder="Enter your username" required>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="" disabled selected>Select a rating</option>
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+        </select>
+
+        <label for="review">Review Message:</label>
+        <textarea id="review" name="review"
+                  placeholder="Write your review here"
+                  minlength="20" required></textarea>
+
+        <button type="submit">Submit Review</button>
+
+    </form>
+
+    <h1>Zomato Food Order Form</h1>
+
+    <!-- Task 4 and 5: Food order form -->
+    <form action="" method="GET">
+
+        <label for="customer">User Name:</label>
+        <input type="text" id="customer" name="customer"
+               placeholder="Enter your name" required>
+
+        <label for="food">Select Food Item:</label>
+        <select id="food" name="food" required>
+            <option value="" disabled selected>Select food</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Burger">Burger</option>
+            <option value="Biryani">Biryani</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity"
+               min="1" placeholder="Enter quantity" required>
+
+        <label for="instructions">Delivery Instructions:</label>
+        <textarea id="instructions" name="instructions"
+                  placeholder="Enter delivery instructions"
+                  required></textarea>
+
+        <!-- Disabled because the order ID is fixed and should not be edited by the user. -->
+        <label for="orderid">Order ID:</label>
+        <input type="text" id="orderid" name="orderid"
+               value="ORD12345" disabled>
+
+        <button type="submit">Place Order</button>
+
+    </form>
+
+</body>
+</html>

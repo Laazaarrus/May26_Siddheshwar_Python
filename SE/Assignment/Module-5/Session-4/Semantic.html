@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Examples</title>
+
+    <style>
+        body {
+            background-color: #e6f2ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        header, nav, article, footer {
+            padding: 15px;
+            margin: 10px auto;
+        }
+
+        article {
+            background-color: white;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: blue;
+        }
+
+        img {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Task 1: Blog Post Layout -->
+    <header>
+        <h1>My Food Blog</h1>
+        <p>Discover stories, places, and delicious food.</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#explore">Explore</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <article id="home">
+        <header>
+            <h2>My First Blog Post</h2>
+            <p>Published on 19 October 2026</p>
+        </header>
+
+        <p>Food brings people together and creates memorable
+        experiences. In this post, I share my love for Indian
+        cuisine and the joy of exploring new dishes.</p>
+
+        <footer>
+            <p>Written by the Food Blog Team</p>
+        </footer>
+    </article>
+
+
+
+    <!-- Task 2: Zomato-Style Restaurant Listing -->
+    <h1>Restaurant Listings</h1>
+
+    <article>
+        <header>
+            <h2>Pizza Paradise</h2>
+        </header>
+
+        <p>Italian cuisine | Pizza, Pasta</p>
+        <p>Price for two: ₹500</p>
+
+        <footer>
+            <p>Rating: 4.5/5 | Delivery Time: 30 minutes</p>
+        </footer>
+    </article>
+
+    <article>
+        <header>
+            <h2>Spice Garden</h2>
+        </header>
+
+        <p>Indian cuisine | Punjabi, North Indian</p>
+        <p>Price for two: ₹400</p>
+
+        <footer>
+            <p>Rating: 4.3/5 | Delivery Time: 25 minutes</p>
+        </footer>
+    </article>
+
+
+    <!-- Task 3: Flipkart-Style Product Page -->
+    <h1>Product Details</h1>
+
+    <nav>
+        <a href="#electronics">Electronics</a> &gt;
+        <a href="#mobiles">Mobiles</a> &gt;
+        <span>Smartphone</span>
+    </nav>
+
+    <header>
+        <h2>iPhone 16 Pro</h2>
+        <img src="data:image/jpeg;base64,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"
+             alt="16 Pro">
+    </header>
+
+    <article>
+        <h3>Product Description</h3>
+        <p>Smartphone X features a high-resolution display,
+        a powerful processor, and a long-lasting battery.</p>
+
+        <p>Price: ₹15,999</p>
+    </article>
+
+    <footer>
+        <p>Special Offer: 10% discount on selected cards.</p>
+        <p>Warranty: 1 year manufacturer warranty.</p>
+    </footer>
+
+
+    <!-- Task 4: Movie Review Refactored with Semantic Tags -->
+    <h1>Movie Review</h1>
+
+    <article>
+        <header>
+            <h2>Interstellar</h2>
+            <p>Genre: Science Fiction</p>
+        </header>
+
+        <nav>
+            <a href="#review">Review</a>
+            <a href="#rating">Rating</a>
+        </nav>
+
+        <section id="review">
+            <h3>My Review</h3>
+            <p>Interstellar is an engaging science-fiction movie
+            with impressive visuals and an emotional story about
+            family, time, and space exploration.</p>
+        </section>
+
+        <footer id="rating">
+            <p>My Rating: 9/10</p>
+            <p>Reviewed by: Movie Fan</p>
+        </footer>
+
+        <footer>
+        <p>&copy; 2026 My Food Blog. All rights reserved.</p>
+    </footer>
+    </article>
+
+</body>
+</html>

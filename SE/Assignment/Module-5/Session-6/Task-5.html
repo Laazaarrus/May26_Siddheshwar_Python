@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reusable CSS Class</title>
+
+    <style>
+        body {
+            background-color: #e6f2ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Reusable class keeps spacing consistent and makes
+           future changes easier by editing values in one place. */
+        .spacing {
+            margin: 15px;
+            padding: 15px;
+        }
+
+        .restaurant {
+            background-color: white;
+            border: 2px solid #e23744;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            background-color: #ffe0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="spacing">Restaurant Listing</h1>
+
+    <div class="restaurant spacing">
+        <h2 class="spacing">Spice Garden</h2>
+        <p class="spacing">Cuisine: North Indian</p>
+        <p class="spacing">Rating: 4.5 / 5</p>
+    </div>
+
+</body>
+</html>

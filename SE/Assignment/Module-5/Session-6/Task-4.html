@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Poster Grid</title>
+
+    <style>
+        body {
+            background-color: #e6f2ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .movie-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .poster {
+            position: relative;
+            width: 200px;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+
+        .poster img {
+            width: 100%;
+            display: block;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: red;
+            color: white;
+            padding: 6px 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Now Showing</h1>
+
+    <div class="movie-grid">
+
+        <div class="poster">
+            <span class="badge">New</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt8HXj7g9PGVdKflh4VTSn-O2d2cGltIq7VLXAw3NnPQ&s=10"
+                 alt="Movie poster 1">
+            <h3>Action Movie</h3>
+        </div>
+
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3E5bElR4AyPXPLg8KbS3M5GrRWVPwVCqFd-Q7sv77Cg&s=10"
+                 alt="Movie poster 2">
+            <h3>Comedy Movie</h3>
+        </div>
+
+        <div class="poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE9Ac6m8Cdk5uMhER0V_b8s3PeCicyojt08X3F-8us5Q&s=10"
+                 alt="Movie poster 3">
+            <h3>Adventure Movie</h3>
+        </div>
+
+    </div>
+
+</body>
+</html>
